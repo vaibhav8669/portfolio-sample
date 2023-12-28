@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 3rem;
+  display: flex;
+  margin-top: 2%;
+  font-family: "Poppins", "sans-serif";
+}
+
+aside {
+  width: 25rem;
+  border: 1px solid blue;
+  box-shadow: 4px 4px 10px rgb(27, 103, 243);
+  border-radius: 30px;
+  padding: 20px;
+  color: white;
+  background-color: rgb(43, 39, 39);
+  height: 90vh;
+}
+
+.person-info {
+  display: grid;
+  place-items: center;
+}
+
+.person {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: rgb(129, 197, 243);
+}
+
+.name {
+  margin: 10px 0;
+  font-weight: bolder;
+}
+
+.post {
+  margin-bottom: 10px;
+  background-color: rgb(66, 64, 64);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-right: 0.15em solid orange;
+  border-left: 0.15em solid orange;
+  color: rgb(88, 174, 255);
+}
+
+.contact-flex {
+  display: flex;
+  margin: 10px 0;
+}
+
+.contact-icon {
+  font-size: x-large;
+  padding: 10px;
+  border-radius: 20%;
+  color: rgb(0, 255, 200);
+  background-color: rgb(68, 63, 63);
+  border-top: 0.15em solid orange;
+  border-bottom: 0.15em solid orange;
+}
+
+.contact-info {
+  margin-left: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email {
+  text-decoration: none;
+  color: white;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.icon-container a {
+  transition: all ease 100ms;
+}
+
+.icon-container a:hover {
+  transform: scale(1.1);
+}
+
+.icon-container a i {
+  color: rgb(187, 185, 185);
+}
+
+.main-container {
+  width: 100%;
+  border: 1px solid blue;
+  box-shadow: 4px 4px 10px rgb(27, 103, 243);
+  border-radius: 30px;
+  margin-left: 2rem;
+  color: white;
+  background-color: rgb(43, 39, 39);
+  height: 90vh;
+}
+
+.main-container header {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+}
+
+.resume a {
+  text-decoration: none;
+  color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all ease 100ms;
+  background-color: rgb(208, 0, 250);
+  padding: 4px 10px;
+  border: 1px solid rgb(126, 13, 13);
+  border-radius: 10px;
+}
+
+.resume a:hover {
+  transform: scale(1.05);
+}
+
+.resume a i {
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+.header-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid rgb(95, 95, 95);
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+#about,
+#skill,
+#project,
+#contact {
+  cursor: pointer;
+  transition: all ease 100ms;
+  font-family: Mooli, sans-serif;
+}
+#about:hover,
+#skill:hover,
+#project:hover,
+#contact:hover {
+  color: rgb(133, 76, 230);
+  transform: scale(1.05);
+}
+
+h1 {
+  font-family: Mooli, sans-serif;
+}
+
+.active {
+  color: rgb(133, 76, 230);
+  transform: scale(1.05);
+}
+
+.tab-section {
+  margin: 2rem 2rem 0;
+}
+
+.about-summury {
+  font-size: small;
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  margin: 30px 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(255, 106, 0);
+}
+
+.menu li {
+  cursor: pointer;
+  transition: all ease 100ms;
+}
+
+.menu li:hover {
+  transform: scale(1.05);
+}
+
+.menu-list {
+  padding-top: 20px;
+  line-height: 12px;
+}
+
+.menu-info {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(87, 38, 220);
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+#experience {
+  display: none;
+}
+
+#skill-tab,
+#project-tab,
+#contact-tab {
+  display: none;
+}
+
+.skill {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.skill-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  border: 1px solid red;
+  font-size: 18px;
+  font-family: Mooli, sans-serif;
+  border-radius: 10px;
+  background-color: rgb(26, 23, 23);
+}
+
+.skill-list:nth-child(odd) {
+  border-color: blue;
+}
+
+.skill-list i {
+  color: rgb(0, 119, 255);
+  font-size: 30px;
+}
+
+.contact {
+  display: flex;
+}
+
+form,
+.contact-menu {
+  width: 50%;
+}
+
+.contact-list {
+  font-size: 12px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-list i {
+  color: rgb(243, 186, 80);
+}
+
+.contact-list:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+input {
+  box-shadow: 0 0 16px 0 rgba(255, 0, 0, 0.1);
+  padding: 8px 12px;
+  width: 100%;
+  border-radius: 0.5rem;
+  outline-color: red;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+}
+
+textarea {
+  outline-color: red;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  color: white;
+  margin-top: 20px;
+  background-color: black;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#msg {
+  color: rgb(217, 255, 0);
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.submit-btn {
+  padding: 8px 20px;
+  margin-top: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all ease 100ms;
+  font-weight: 500;
+  font-size: 1.25rem;
+  background-color: rgb(227, 8, 234);
+  border-radius: 12px;
+  color: white;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+
+.submit-btn i {
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 867px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 2rem;
+  }
+  .main-container {
+    margin: 1rem 0 0;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-menu .resume {
+    display: none;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    margin-top: 5px;
+  }
+  textarea {
+    margin-top: 5px;
+  }
+  .resume {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */

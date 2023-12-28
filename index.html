@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar Section -->
+
+      <aside>
+        <div class="person-info">
+          <img src="./img/person.png" width="120px" class="person" />
+          <h1 class="name">Vaibhav Bergal</h1>
+          <div class="post"><span class="element"></span></div>
+        </div>
+        <hr />
+        <div class="contact-flex">
+          <i class="bx bx-mobile contact-icon"></i>
+          <div class="contact-info">
+            <div class="contact-name">Phone</div>
+            <div class="contact-info1">8669899671</div>
+          </div>
+        </div>
+        <div class="contact-flex">
+          <i class="bx bxl-gmail contact-icon"></i>
+          <div class="contact-info">
+            <div class="contact-name">E-mail</div>
+            <div class="contact-info1">
+              <a href="mailto:bergalvaibhav33@gmail.com" class="email"
+                >bergalvaibhav33@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contact-flex">
+          <i class="bx bx-current-location contact-icon"></i>
+          <div class="contact-info">
+            <div class="contact-name">Location</div>
+            <div class="contact-info1">Pune, Maharashtra</div>
+          </div>
+        </div>
+        <hr />
+        <div class="icon-container">
+          <a href="https://api.whatsapp.com/send?phone=918669899671&text=Hello"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a href="https://github.com/vaibhav8669">
+            <i class="bx bxl-github"></i></a
+          ><a href="https://www.linkedin.com/in/vaibhav-bergal-04869421b/"
+            ><i class="bx bxl-linkedin"></i></a
+          ><a href="https://www.instagram.com/xx._.vaibhav99/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+      </aside>
+
+      <!--Main Section-->
+
+      <div class="main-container">
+        <header>
+          <div class="resume">
+            <a href="./img/vaibhav_resume.pdf" download
+              >Resume <i class="bx bx-download"></i
+            ></a>
+          </div>
+          <div class="header-container">
+            <li id="about" class="btn active">About</li>
+            <li id="skill" class="btn">Skill</li>
+            <li id="project" class="btn">Project</li>
+            <li id="contact" class="btn">Contact</li>
+          </div>
+        </header>
+       
+        <div class="tab-section">
+          <div id="about-tab">
+            <h1>About Me</h1>
+            <p class="about-summury">
+              An enthusiastic BCA fresher focused on Information technology with
+              strong skills like HTML, CSS, Tailwind CSS and JavaScript. Being a
+              fresher, I would like to work for an organization wherein I can
+              showcase the best of my skills and simultaneously learn as well as
+              explore new domains
+            </p>
+            <ul class="menu">
+              <li onclick="education()">Education</li>
+              <li onclick="experience()">Experience</li>
+            </ul>
+            <hr />
+            <ul class="menu-list">
+              <li id="education">
+                <p class="menu-info">2020-2023</p>
+                <br />
+                <p>BCA</p>
+                <br />
+                <p>Shivaji University, Kolhapur</p>
+                <br />
+              </li>
+              <li id="experience">
+                <p class="menu-info">Sep 2023 - Oct 2023</p>
+                <br />
+                <p>Web Development</p>
+                <br />
+                <p>TopperWorld</p>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Skill -->
+  
+          <div id="skill-tab">
+            <h1>My Skills</h1>
+            <div class="skill">
+              <div class="skill-list">
+                <img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/color/48/html-5--v1.png"
+                  alt="html-5--v1"
+                />HTML
+              </div>
+              <div class="skill-list">
+                <img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/color/48/css3.png"
+                  alt="css3"
+                />CSS
+              </div>
+              <div class="skill-list">
+                <img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/color/48/bootstrap--v2.png"
+                  alt="bootstrap--v2"
+                />BootStrap
+              </div>
+              <div class="skill-list">
+                <img width="35" height="35" src="https://img.icons8.com/color/48/sass-avatar.png" alt="sass-avatar"/>
+                SCSS
+              </div>
+              <div class="skill-list">
+                <img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/color/48/tailwind_css.png"
+                  alt="tailwind_css"
+                />
+                Tailwind CSS
+              </div>
+              <div class="skill-list">
+                <img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/color/48/javascript--v1.png"
+                  alt="javascript--v1"
+                />
+                JavaScript
+              </div>
+              <div class="skill-list">
+                <i class="bx bxl-php"></i>
+                PHP
+              </div>
+              <div class="skill-list">
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/color/48/mysql-logo.png"
+                  alt="mysql-logo"
+                />
+                MySQL
+              </div>
+            </div>
+          </div>
+  
+          <!-- Projects -->
+  
+          <div id="project-tab">
+            <h1>Project</h1>
+          </div>
+  
+          <!-- Contact -->
+  
+          <div id="contact-tab">
+            <h1>Contact Me</h1>
+            <div class="contact">
+              <div class="contact-menu">
+                <div class="contact-list">
+                  <i class="bx bxl-gmail"></i>
+                  <p>bergalvaibhav33@gmail.com</p>
+                </div>
+                <div class="contact-list">
+                  <i class="bx bx-mobile"></i>
+                  <p>8669899671</p>
+                </div>
+                <div class="resume">
+                  <a href="./img/vaibhav_resume.pdf" download
+                    >Resume <i class="bx bx-download"></i
+                  ></a>
+                </div>
+              </div>
+              <form name="contactForm">
+                <input type="text" name="Name" placeholder="Your Name" required />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Massage"
+                  id=""
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button class="submit-btn">
+                  Send <i class="bx bxl-telegram"></i>
+                </button>
+                <div id="msg"></div>
+              </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
